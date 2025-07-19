@@ -1,9 +1,17 @@
-// Mobile menu toggle
+        // Mobile menu toggle
         const menuIcon = document.getElementById('menu-icon');
         const nav = document.querySelector('nav');
         
         menuIcon.addEventListener('click', () => {
             nav.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+            
+            // Toggle between menu and X icon
+            if (nav.classList.contains('active')) {
+                menuIcon.className = 'bx bx-x';
+            } else {
+                menuIcon.className = 'bx bx-menu';
+            }
         });
         
         // Smooth scrolling for navigation links
@@ -16,8 +24,21 @@
                         behavior: 'smooth'
                     });
                 }
+                
+                // Close mobile menu when link is clicked
                 nav.classList.remove('active');
+                menuIcon.classList.remove('active');
+                menuIcon.className = 'bx bx-menu';
             });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!nav.contains(e.target) && !menuIcon.contains(e.target)) {
+                nav.classList.remove('active');
+                menuIcon.classList.remove('active');
+                menuIcon.className = 'bx bx-menu';
+            }
         });
         
         // Active navigation link

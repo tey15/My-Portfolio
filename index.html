@@ -15,6 +15,7 @@
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav>
             <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
             <a href="#resume">Resume</a>
             <a href="#portfolio">Project</a>
@@ -29,7 +30,7 @@
             <h2>I'm 
                 <span style="--i:4;" data-text="an ITC Student ">an ITC Student majaring in Computer Science.</span>
             </h2>
-            <p>Dedicated Information and Communication Technology student eager to apply technical skills and creativity in a real workplace environment. Passionate about building innovative solutions, with a strong foundation in programming and web development, and seeking an internship to further learn and grow.</p>
+            <p>I am a dedicated Information and Communication Technology student eager to apply my technical skills and creativity in a real workplace. I have a passion for web design and the QA process, along with a strong foundation in programming and web development. I am seeking an internship to further learn and grow in this field.</p>
             <div class="btn-sci">
                 <a href="#contact" class="btn">Download CV</a>
                 <div class="sci">
@@ -50,57 +51,149 @@
         </div>
     </section>
 
-    <!-- Skills section -->
-    <section id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skill-container">
-            <div class="skill-box">
-                <div class="icon">
-                    <i class='bx bx-code-alt'></i>
-                </div>
-                <h3>Programming Languages</h3>
-                <p>Proficient in C++, Python, Java, and Dart (beginner). </p>
-            </div>
-            
 
-            
-            <div class="skill-box">
-                <div class="icon">
-                    <i class='bx bx-code-curly'></i>
+        <section class="about-section" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        
+        <div class="about-container">
+            <div class="image-section">
+                <div class="workspace-scene">
+
+                        <div class="circular-text">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <path id="circle-path" d="M 100,100 m -85,0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0" />
+                                </defs>
+                                <text>
+                                    <textPath href="#circle-path" startOffset="0%">
+                                        WEB DEVELOPER • ITC STUDENT • 
+                                    </textPath>
+                                </text>
+                            </svg>
+                        </div>
+                    <div class="avatar-center">
+                        <img src="./Image/photosc.jpg" alt="Profile Photo" class="profile-img">
+                    </div>
                 </div>
-                <h3>Web Development</h3>
-                <p>Frontend development using HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap. Creating responsive and modern web applications.</p>
             </div>
             
-            <div class="skill-box">
-                <div class="icon">
-                    <i class='bx bx-data'></i>
+            <div class="content-section">
+                <div class="about-label">ABOUT ME</div>
+                <h3 class="about-title">A dedicated IT Student at Institude Of Technology Of <span class="location-text">Cambodia </span></h3>
+                
+                <p class="about-description">
+                    I am a passionate female IT student interested in web design and <span class="location-text">quality assurance </span>. Currently, I'm in my third year at the Institute of Technology of Cambodia. I have a good eye for detail and a love for technology. My skills include HTML, CSS, JavaScript, and a basic understanding of testing methods.
+
+                    I am looking for opportunities in system testing and quality assurance. I enjoy making sure that apps work well on all devices. I like working closely with developers and UI teams to give feedback and help create high-quality products.
+
+                    I am eager to learn and grow in real-world QA processes and am excited about the chance to be part of a dynamic team while improving my skills.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        
+        <div class="skills-container">
+            <!-- Front-End Skills -->
+            <div class="skill-category">
+                <h3 class="category-title">Front-End</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class='bx bxl-html5 skill-icon html-icon'></i>
+                        <p class="skill-name">HTML</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bxl-css3 skill-icon css-icon'></i>
+                        <p class="skill-name">CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bxl-javascript skill-icon js-icon'></i>
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                    <!-- <div class="skill-card">
+                        <i class='bx bxl-react skill-icon react-icon'></i>
+                        <p class="skill-name">React</p>
+                    </div> -->
+                    <div class="skill-card">
+                        <i class='bx bxl-bootstrap skill-icon bootstrap-icon'></i>
+                        <p class="skill-name">Bootstrap</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bxl-tailwind-css skill-icon tailwind-icon'></i>
+                        <p class="skill-name">Tailwind CSS</p>
+                    </div>
                 </div>
-                <h3>Development Tools</h3>
-                <p>Version control with Git & GitHub, database management with MySQL.</p>
             </div>
             
-            <div class="skill-box">
-                <div class="icon">
-                    <i class='bx bx-group'></i>
+      
+            <div class="skill-category">
+                <h3 class="category-title">Programming</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class='bx bxl-python skill-icon python-icon'></i>
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bxl-java skill-icon java-icon'></i>
+                        <p class="skill-name">Java</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bx-code-curly skill-icon cpp-icon'></i>
+                        <p class="skill-name">C++</p>
+                    </div>
                 </div>
-                <h3>Soft Skills</h3>
-                <p>Good communication skills, teamwork, problem-solving abilities, and time management. </p>
             </div>
             
-            <div class="skill-box">
-                <div class="icon">
-                    <i class='bx bx-book-reader'></i>
+            <!-- Development Tools -->
+            <div class="skill-category">
+                <h3 class="category-title">Development Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class='bx bxl-git skill-icon git-icon'></i>
+                        <p class="skill-name">Git</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bxl-github skill-icon github-icon'></i>
+                        <p class="skill-name">GitHub</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class='bx bx-terminal skill-icon'></i>
+                        <p class="skill-name">Terminal</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bx-data skill-icon mysql-icon'></i>
+                        <p class="skill-name">MySQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bx-code-alt skill-icon'></i>
+                        <p class="skill-name">VS Code</p>
+                    </div>
                 </div>
-                <h3>Personal Interests</h3>
-                <p>Reading books, coding projects, traveling, and volunteering. Always eager to learn new technologies and contribute to community.</p>
             </div>
-            <div class="skill-box">
-                <div class="icon">
-                    <i class='bx bx-book-reader'></i>
+            
+            <!-- Soft Skills -->
+            <div class="skill-category">
+                <h3 class="category-title">Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class='bx bx-group skill-icon'></i>
+                        <p class="skill-name">Teamwork</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bx-chat skill-icon'></i>
+                        <p class="skill-name">Communication</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bx-bulb skill-icon'></i>
+                        <p class="skill-name">Problem Solving</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class='bx bx-time skill-icon'></i>
+                        <p class="skill-name">Time Management</p>
+                    </div>
                 </div>
-                <h3>Language</h3>
-                <p>English</p>
             </div>
         </div>
     </section>
@@ -206,7 +299,28 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="portfolio-item">
+                <img src="./Image/project5.png" alt="web Project">
+                <div class="portfolio-content">
+                    <h3>Tube Coffee</h3>
+                    <p>A reponsive web design using HTML,CSS and Javascript</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./Image/project6.png" alt="Java Project">
+                <div class="portfolio-content">
+                    <h3>Master Quiz</h3>
+                    <p>"Master Quiz... multi-category technical quiz designed to test knowledge in HTML, JavaScript, General Knowledge and Flutter by loading questions from JSON data.") clearly refers to a quiz application.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">Source Code</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
